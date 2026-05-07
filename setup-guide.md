@@ -13,7 +13,7 @@ Since the Xeon processor is 32-bit, I chose **Q4OS** because it is based on Debi
 * **Environment:** Selected the **LXDE** desktop environment to save as much of that 4GB RAM as possible.
 
 
-<-- well my xeon supported both 64/32bit but i did go with 32bit cause BIOS/firmware was locked to 32bit as these are old server rigs which were based on 32bit enviroment (windows 7 server 32bit)-->
+<-- well my xeon supported both 64/32bit but i did go with 32bit cause BIOS/firmware was locked to 32bit as these are old server rigs which were based on 32bit environment (windows 7 server 32bit)-->
 
 ---
 
@@ -35,7 +35,7 @@ To get Webmin running on 32-bit Debian, I used these commands:
 ---
 
 ## 3. The "Gotchas" (Troubleshooting)
-* **usr/passwd:** The user/passwd will the one you use in your machiene as it is locally hosted for your machiene you can just use same passwd you use in your machiene.
+* **usr/passwd:** The user/passwd will the one you use in your machine as it is locally hosted for your machine you can just use same passwd you use in your machine.
 * **The URL:** You **must** use `https://` and port `:10000`. If you use `http://`, the page will just hang.
 * **Root Access:** If you get locked out, use:
   `sudo /usr/share/webmin/changepass.pl /etc/webmin root [yourpassword]`
@@ -43,5 +43,5 @@ To get Webmin running on 32-bit Debian, I used these commands:
 ---
 
 ## 4. Current Status
-The server is currently accessible at `https://192.168.29.169:10000`. 
+The server is currently accessible at `https://192.168.29.xxx:10000`. 
 Memory usage is sitting at roughly **15%** on idle.
